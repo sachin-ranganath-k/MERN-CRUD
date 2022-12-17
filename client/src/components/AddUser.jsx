@@ -16,7 +16,7 @@ const initialValue = {
   name: "",
   username: "",
   email: "",
-  phone: "",
+  phoneNo: "",
 };
 
 const Container = styled(FormGroup)`
@@ -28,7 +28,7 @@ const Container = styled(FormGroup)`
 
 const AddUser = () => {
   const [user, setUser] = useState(initialValue);
-  const { name, username, email, phone } = user;
+  const { name, username, email, phoneNo } = user;
 
 
 
@@ -75,8 +75,8 @@ const AddUser = () => {
         <InputLabel htmlFor="my-input">Phone</InputLabel>
         <Input
           onChange={(e) => onValueChange(e)}
-          name="phone"
-          value={phone}
+          name="phoneNo"
+          value={phoneNo}
           id="my-input"
         />
       </FormControl>

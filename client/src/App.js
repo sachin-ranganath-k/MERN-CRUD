@@ -7,7 +7,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<NavBar />} />
-        <Route path="/all" element={<AddUser />} />
+        <Route path="/add" element={<AddUser />} />
       </Routes>
     </BrowserRouter>
   );
